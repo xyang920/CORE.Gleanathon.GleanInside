@@ -17,13 +17,27 @@
   
   <PropertyGroup>
     <!-- Specifies information for Assembly and Yak -->
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Title>GleanChatbotComponent</Title>
-    <Company>ChatbotComponent Authors</Company>
+    <Company>CORE studio @Thornton Tomasetti</Company>
     <Description>Glean AI chatbot Grasshopper component for ShapeDiver apps</Description>
   </PropertyGroup>
-  
-  <ItemGroup>
+
+  <!-- Compilation symbols for version-specific code -->
+  <PropertyGroup Condition="$(TargetFramework.StartsWith('net4'))">
+    <DefineConstants>RHINO7</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="!($(TargetFramework.StartsWith('net4')))">
+    <DefineConstants>RHINO8</DefineConstants>
+  </PropertyGroup>
+
+  <!-- Rhino 7: use Grasshopper 7.x SDK (net48) -->
+  <ItemGroup Condition="$(TargetFramework.StartsWith('net4'))">
+    <PackageReference Include="Grasshopper" Version="7.0.21236.11001" ExcludeAssets="runtime" />
+  </ItemGroup>
+
+  <!-- Rhino 8: use Grasshopper 8.x SDK (net7.0 / net7.0-windows) -->
+  <ItemGroup Condition="!($(TargetFramework.StartsWith('net4')))">
     <PackageReference Include="Grasshopper" Version="8.0.23304.9001" ExcludeAssets="runtime" />
   </ItemGroup>
 
@@ -33,7 +47,7 @@
     <!-- HttpClient lives in a separate assembly on .NET Framework -->
     <Reference Include="System.Net.Http" />
   </ItemGroup>
-  
+
   <!-- For Windows only builds -->
   <PropertyGroup Condition="$(TargetFramework.Contains('-windows')) or $(TargetFramework.StartsWith('net4'))">
     <UseWindowsForms>true</UseWindowsForms>
@@ -43,11 +57,30 @@
   <ItemGroup Condition="!($(TargetFramework.Contains('-windows')) or $(TargetFramework.StartsWith('net4')))">
     <!-- Rhino 8.11 and later you can use this -->
     <!-- <FrameworkReference Include="Microsoft.WindowsDesktop.App.WindowsForms" /> -->
-    
+
     <!-- Rhino 8.10 and earlier -->
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net48" Version="1.0.3" ExcludeAssets="all" GeneratePathProperty="true" />
     <Reference Include="$(PkgMicrosoft_NETFramework_ReferenceAssemblies_net48)\build\.NETFramework\v4.8\System.Windows.Forms.dll" Private="False" />
     <PackageReference Include="System.Drawing.Common" Version="7.0.0" ExcludeAssets="runtime" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <EmbeddedResource Include="glean_bot.jfif" />
+  </ItemGroup>
+
+  <!-- Auto-copy to Grasshopper Libraries subfolders after build -->
+  <Target Name="CopyToGrasshopperLibraries" AfterTargets="Build">
+
+    <!-- Rhino 7 → Libraries\RH7\ -->
+    <Copy Condition="$(TargetFramework.StartsWith('net4'))"
+          SourceFiles="$(OutputPath)$(AssemblyName).gha"
+          DestinationFolder="$(APPDATA)\Grasshopper\Libraries\RH7" />
+
+    <!-- Rhino 8 Windows → Libraries\RH8\ -->
+    <Copy Condition="$(TargetFramework.Contains('-windows'))"
+          SourceFiles="$(OutputPath)$(AssemblyName).gha"
+          DestinationFolder="$(APPDATA)\Grasshopper\Libraries\RH8" />
+
+  </Target>  
 </Project>

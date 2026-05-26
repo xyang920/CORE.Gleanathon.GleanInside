@@ -9,8 +9,19 @@ namespace ChatbotComponent
     {
         public override string Name => "ChatbotComponent";
 
+        internal static readonly Bitmap _icon = LoadIcon();
+
+        private static Bitmap LoadIcon()
+        {
+            var asm = System.Reflection.Assembly.GetExecutingAssembly();
+            using var stream = asm.GetManifestResourceStream("ChatbotComponent.glean_bot.jfif");
+            if (stream == null) return null;
+            var src = new Bitmap(stream);
+            return new Bitmap(src, new System.Drawing.Size(24, 24));
+        }
+
         //Return a 24x24 pixel bitmap to represent this GHA library.
-        public override Bitmap Icon => null;
+        public override Bitmap Icon => _icon;
 
         //Return a short string describing the purpose of this GHA library.
         public override string Description => $"Glean AI chatbot component for ShapeDiver apps. v{GleanChatbotComponent.Version}";
@@ -27,3 +38,4 @@ namespace ChatbotComponent
         public override string AssemblyVersion => GetType().Assembly.GetName().Version.ToString();
     }
 }
+

@@ -16,7 +16,7 @@
         <item name="plugin_version" type_name="gh_version" type_code="80">
           <Major>1</Major>
           <Minor>0</Minor>
-          <Revision>8</Revision>
+          <Revision>7</Revision>
         </item>
       </items>
       <chunks count="5">
@@ -34,11 +34,10 @@
           </items>
         </chunk>
         <chunk name="DefinitionProperties">
-          <items count="4">
+          <items count="3">
             <item name="Date" type_name="gh_date" type_code="8">639148004370742447</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
-            <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
-            <item name="Name" type_name="gh_string" type_code="10">components.ghx</item>
+            <item name="Name" type_name="gh_string" type_code="10">components_rh7.ghx</item>
           </items>
           <chunks count="3">
             <chunk name="Revisions">
@@ -49,10 +48,10 @@
             <chunk name="Projection">
               <items count="2">
                 <item name="Target" type_name="gh_drawing_point" type_code="30">
-                  <X>10</X>
-                  <Y>10</Y>
+                  <X>-607</X>
+                  <Y>-118</Y>
                 </item>
-                <item name="Zoom" type_name="gh_single" type_code="5">1</item>
+                <item name="Zoom" type_name="gh_single" type_code="5">1.62833273</item>
               </items>
             </chunk>
             <chunk name="Views">
@@ -74,12 +73,12 @@
           <chunks count="1">
             <chunk name="Library" index="0">
               <items count="6">
-                <item name="AssemblyFullName" type_name="gh_string" type_code="10">ChatbotComponent, Version=1.0.1.0, Culture=neutral, PublicKeyToken=null</item>
-                <item name="AssemblyVersion" type_name="gh_string" type_code="10">1.0.1.0</item>
+                <item name="AssemblyFullName" type_name="gh_string" type_code="10">ChatbotComponent, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</item>
+                <item name="AssemblyVersion" type_name="gh_string" type_code="10">1.0.2.0</item>
                 <item name="Author" type_name="gh_string" type_code="10">Jason Yang</item>
                 <item name="Id" type_name="gh_guid" type_code="9">ab953f82-966b-46ce-a2f3-75908cb7cf4e</item>
                 <item name="Name" type_name="gh_string" type_code="10">ChatbotComponent</item>
-                <item name="Version" type_name="gh_string" type_code="10">1.0.1.0</item>
+                <item name="Version" type_name="gh_string" type_code="10">1.0.2.0</item>
               </items>
             </chunk>
           </chunks>
@@ -98,8 +97,8 @@
               <chunks count="1">
                 <chunk name="Container">
                   <items count="4">
-                    <item name="Description" type_name="gh_string" type_code="10">Send messages to the Glean Agent API and receive AI responses. Conversation history is stored inside the component — no wire loop needed. Toggle Reset to True to start a new session. v1.0.1</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2e30ad03-35ee-4953-ba71-9e5b2bda946b</item>
+                    <item name="Description" type_name="gh_string" type_code="10">Send messages to the Glean Agent API and receive AI responses. Conversation history is stored inside the component 鈥?no wire loop needed. Toggle Reset to True to start a new session. v1.0.2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">20056c65-6239-40d6-819c-bcfe09c6ab8a</item>
                     <item name="Name" type_name="gh_string" type_code="10">Glean Chatbot</item>
                     <item name="NickName" type_name="gh_string" type_code="10">GleanBot</item>
                   </items>
@@ -107,21 +106,21 @@
                     <chunk name="Attributes">
                       <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>914</X>
-                          <Y>176</Y>
+                          <X>906</X>
+                          <Y>169</Y>
                           <W>114</W>
                           <H>104</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>978</X>
-                          <Y>228</Y>
+                          <X>970</X>
+                          <Y>221</Y>
                         </item>
                       </items>
                     </chunk>
                     <chunk name="param_input" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">User message to send to Glean</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5844307e-66b2-4144-b1ce-4b87c2d02a6f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4eb16162-3d3d-4ccb-b7c6-a5b783ea7a89</item>
                         <item name="Name" type_name="gh_string" type_code="10">Message</item>
                         <item name="NickName" type_name="gh_string" type_code="10">Msg</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -131,14 +130,14 @@
                         <chunk name="Attributes">
                           <items count="2">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>916</X>
-                              <Y>178</Y>
+                              <X>908</X>
+                              <Y>171</Y>
                               <W>47</W>
                               <H>20</H>
                             </item>
                             <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                              <X>941</X>
-                              <Y>188</Y>
+                              <X>933</X>
+                              <Y>181</Y>
                             </item>
                           </items>
                         </chunk>
@@ -147,7 +146,7 @@
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Glean API bearer token</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6ddeec5b-89dc-4115-a55c-30bdc5e019ff</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8316f1b1-6aeb-4000-9a96-ec276ee1b740</item>
                         <item name="Name" type_name="gh_string" type_code="10">API Token</item>
                         <item name="NickName" type_name="gh_string" type_code="10">Tok</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -157,14 +156,14 @@
                         <chunk name="Attributes">
                           <items count="2">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>916</X>
-                              <Y>198</Y>
+                              <X>908</X>
+                              <Y>191</Y>
                               <W>47</W>
                               <H>20</H>
                             </item>
                             <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                              <X>941</X>
-                              <Y>208</Y>
+                              <X>933</X>
+                              <Y>201</Y>
                             </item>
                           </items>
                         </chunk>
@@ -173,7 +172,7 @@
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Glean tenant domain slug (e.g. 'mycompany' resolves to mycompany-be.glean.com)</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2fde73ba-fad7-4416-9b38-23ab5ba7ea0e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">282980bb-a497-440d-9a02-a032cafa7d8c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Domain</item>
                         <item name="NickName" type_name="gh_string" type_code="10">Dom</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -183,14 +182,14 @@
                         <chunk name="Attributes">
                           <items count="2">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>916</X>
-                              <Y>218</Y>
+                              <X>908</X>
+                              <Y>211</Y>
                               <W>47</W>
                               <H>20</H>
                             </item>
                             <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                              <X>941</X>
-                              <Y>228</Y>
+                              <X>933</X>
+                              <Y>221</Y>
                             </item>
                           </items>
                         </chunk>
@@ -199,7 +198,7 @@
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Set to True to clear the stored conversation history and start a new session.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6f3068fe-df15-4a0f-891b-7255e0eedd3e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2c9b4bba-fd01-4611-a8ba-8127572277bb</item>
                         <item name="Name" type_name="gh_string" type_code="10">Reset</item>
                         <item name="NickName" type_name="gh_string" type_code="10">Rst</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -209,14 +208,14 @@
                         <chunk name="Attributes">
                           <items count="2">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>916</X>
-                              <Y>238</Y>
+                              <X>908</X>
+                              <Y>231</Y>
                               <W>47</W>
                               <H>20</H>
                             </item>
                             <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                              <X>941</X>
-                              <Y>248</Y>
+                              <X>933</X>
+                              <Y>241</Y>
                             </item>
                           </items>
                         </chunk>
@@ -245,7 +244,7 @@
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Glean agent ID to invoke (from the agent's Publishing &gt; API settings). Leave empty to use the default AI assistant.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">67d30c7e-389c-45b2-9b16-93105f516829</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">228dd297-e63f-4916-b92f-ad709824f254</item>
                         <item name="Name" type_name="gh_string" type_code="10">Agent ID</item>
                         <item name="NickName" type_name="gh_string" type_code="10">AgentID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -255,14 +254,14 @@
                         <chunk name="Attributes">
                           <items count="2">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>916</X>
-                              <Y>258</Y>
+                              <X>908</X>
+                              <Y>251</Y>
                               <W>47</W>
                               <H>20</H>
                             </item>
                             <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                              <X>941</X>
-                              <Y>268</Y>
+                              <X>933</X>
+                              <Y>261</Y>
                             </item>
                           </items>
                         </chunk>
@@ -292,7 +291,7 @@
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Text response from the Glean AI agent</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ca4c7845-c7e5-4255-925f-20d98d14aeb7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9efcc4af-1f8a-469e-9e18-c9616e12e67f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Response</item>
                         <item name="NickName" type_name="gh_string" type_code="10">Resp</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -302,14 +301,14 @@
                         <chunk name="Attributes">
                           <items count="2">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>993</X>
-                              <Y>178</Y>
+                              <X>985</X>
+                              <Y>171</Y>
                               <W>33</W>
                               <H>25</H>
                             </item>
                             <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                              <X>1009.5</X>
-                              <Y>190.5</Y>
+                              <X>1001.5</X>
+                              <Y>183.5</Y>
                             </item>
                           </items>
                         </chunk>
@@ -318,7 +317,7 @@
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Updated conversation history JSON. Feed this back into the History input to continue the conversation.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c7131893-1503-4fd8-9d12-a91be5aa22fa</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f991b542-f498-41d9-acf4-bdc0dc6db1f9</item>
                         <item name="Name" type_name="gh_string" type_code="10">History</item>
                         <item name="NickName" type_name="gh_string" type_code="10">Hist</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -328,14 +327,14 @@
                         <chunk name="Attributes">
                           <items count="2">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>993</X>
-                              <Y>203</Y>
+                              <X>985</X>
+                              <Y>196</Y>
                               <W>33</W>
                               <H>25</H>
                             </item>
                             <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                              <X>1009.5</X>
-                              <Y>215.5</Y>
+                              <X>1001.5</X>
+                              <Y>208.5</Y>
                             </item>
                           </items>
                         </chunk>
@@ -344,7 +343,7 @@
                     <chunk name="param_output" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">"OK" on success, or an error description on failure</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">516dbf99-bfdf-4323-a7ff-c019ac05fdad</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">19849508-d997-4d8f-bc15-b219d1096be1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Status</item>
                         <item name="NickName" type_name="gh_string" type_code="10">Stat</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -354,14 +353,14 @@
                         <chunk name="Attributes">
                           <items count="2">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>993</X>
-                              <Y>228</Y>
+                              <X>985</X>
+                              <Y>221</Y>
                               <W>33</W>
                               <H>25</H>
                             </item>
                             <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                              <X>1009.5</X>
-                              <Y>240.5</Y>
+                              <X>1001.5</X>
+                              <Y>233.5</Y>
                             </item>
                           </items>
                         </chunk>
@@ -370,7 +369,7 @@
                     <chunk name="param_output" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Human-readable conversation transcript. Connect to a Panel component to display chat history.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c5509a79-59b8-46d1-9a19-5202f1206939</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">187bd742-e91f-46ae-8fe8-c9c60eaa6a7b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Chat Log</item>
                         <item name="NickName" type_name="gh_string" type_code="10">Log</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -380,14 +379,14 @@
                         <chunk name="Attributes">
                           <items count="2">
                             <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>993</X>
-                              <Y>253</Y>
+                              <X>985</X>
+                              <Y>246</Y>
                               <W>33</W>
                               <H>25</H>
                             </item>
                             <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                              <X>1009.5</X>
-                              <Y>265.5</Y>
+                              <X>1001.5</X>
+                              <Y>258.5</Y>
                             </item>
                           </items>
                         </chunk>
@@ -404,7 +403,7 @@
     <chunk name="Thumbnail">
       <items count="1">
         <item name="Thumbnail" type_name="gh_drawing_bitmap" type_code="37">
-          <bitmap length="1253">iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAIAAADrOV6nAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR6SURBVHhe7dhdTFt1GMdxvHV1Shbp6CtIO9wI8cILL7zSmCXO6bbolYnGC+NLtuyKRBzbwA0iL5tgXyzMFWnLYuZGcM4MOgGBMWCgFjfqoIW2nJ5zCi1QdLyFzT6mSGLWmHjbX30+edKcnKTPzTf5n5OTlcUyADFY/yQMM0CcEB4nhMcJ4XFCeJwQHieExwnhcUJ4nBAeJ4THCeFxQnicEB4nhMcJ4XFCeJwQHieExwnhZWxCUQwLohwISYGQGJyRgjPJi3+fGSksyan/x5GZCYVwWJQivtHe4GhHaLRzZrQj/HNHxOMWfuoMjW6N5HFHPG7Z4w4NXw14x+TIbOoWEJmZMBqNdvUOj5x7h7r3U9chwb73Rt2LQ6a9y1cO0PVD1HmQ3AeDzS+HXPvkC6/cv7Kv21XjC0qSJKUuQpCZCSORyMiYb/zcG+TUkNO4ft4QtxVM1upW7QZyGslhJKcxUK0bLlf3H1P9YdNdNZf8NhXmhGlEkmWvX5xyvEXOfHIV/enYI5p2Ldie3mjZQ61F5Nqcb4rpUjFdLCK7PtR/QZ6/JwhC6iIEmZkwFot1dA0O1rxErQXk2E2O3f7agoGyvKXGQmp5iuw6chTK9UbhM0PMakx8ld/nOD0lzImimLoIQWYmDItiUFwUXG/TeTU179r40kjOQmotpOaC9cuvrVx7P+EsDlTpbx3TTVbnUUv+pbojXr8gy5DvpZmZMBqNXu+9NfzpC9SsJbthrEwzWKq58VFu3GqYv/19SIyst71Ozerkc7HFkDDnBLvt8vxy6hYQmZlQlmWPNzBheZWalNSUv2LKWzbnrVn0Dxp1y9eOLgyYH7Q8O1erkmp0C/X6hFV503lqWpzngzSNyLL8693QpGU/ffEk2fTUpA+dUgcr1WsmLVlzybKTbJqJcpX7SM7tE7nUuPNi1bvjfJCmlWg06v5xeKjiObLlkFVLVu30iZ2/lCpXGjRk1ZBFTRYt2bTUlPxN1G2f7rBKC3yQphVRDMqLQtOBRP3jyWDm5NxvUCU2L5JjUq+dVa2cVW00qBJnHhtxVQQjcT5I00g0FuvsGRo5/oy3ZNt37z3RczS773B23wfZK2dyyKykz5VkUvpLd/zwYfbYxzvItP3rk2/e8SeP39RFCDIz4d/PwjtVz8ePP+IreXShXBEvVyye3LZ6WrFWuTWrlYp7nyh+r1CslmV5L1eL/EaaVoRwWJ6dm/bcnOhtCwx86+tv9/W3+/vbJ/oemsnN+3d72oKT46IcSd0CIjMTbhLE2ZgUW5Ki8f+Y2FKyH+bXtcxO+H/BCeFxQnicEB4nhMcJ4XFCeJwQHieExwnhcUJ4nBAeJ4THCeFxQnicEB4nhMcJ4XFCeJwQHieExwnhcUJ4nBAeJ4THCeFxQnicEB4nhMcJ4XFCeJwQHieExwnhcUJ4nBAeJ4THCeFxQnicEB4nhMcJ4XFCeJwQHieExwnhcUJ4nBAeJ4THCeFxQnicEB4nhMcJ4XFCeJwQHieExwnhcUJ4nBDeQwkZqK2EDNpfi7WlvHq1a8kAAAAASUVORK5CYII=</bitmap>
+          <bitmap length="1852">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</bitmap>
         </item>
       </items>
     </chunk>
